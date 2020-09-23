@@ -16,9 +16,6 @@ const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
 
-console.log(path.join(__dirname, '../public/help.html'))
-
-
 // Setup handlebars engine and views location
 app.set('view engine', 'hbs')
 app.set('views', viewsPath)
@@ -109,5 +106,5 @@ app.get('*', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log('Server is up on port' + port) // see line 12 for heroku and localhost
+    console.log('Server is up on port ' + port) // see line 12 for heroku and localhost
 })
