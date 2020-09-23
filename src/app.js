@@ -16,7 +16,7 @@ const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
 
-console.log(path.join(__dirname, '../public/help.html'))
+console.log(path.join(__dirname, '../public/help.html'))  //not existing anymore
 
 
 // Setup handlebars engine and views location
@@ -25,8 +25,8 @@ app.set('views', viewsPath)
 hbs.registerPartials(partialsPath)
 
 // Setup static directory to serve
-app.use(express.static(publicDirectoryPath))
-app.use(express.static(path.join(__dirname, '../public/about.html'))) /*
+app.use(express.static(publicDirectoryPath)) /*
+app.use(express.static(path.join(__dirname, '../public/about.html'))) 
 app.use(express.static(path.join(__dirname, '../public/help.html')) */
 
 app.get('', (req, res) => {
