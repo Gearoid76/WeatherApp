@@ -1,16 +1,18 @@
 {
   "name": "weather-app",
   "version": "1.0.0",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "node src/app.js" 
+    "start": "node src/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "request": "^2.88.0",
-    "yargs": "^15.1.0"
+    "express": "^4.16.4",
+    "hbs": "^4.0.1",
+    "request": "^2.88.0"
   }
 }
+
