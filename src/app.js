@@ -16,7 +16,7 @@ const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
 
-console.log(path.join(__dirname, '../public/help.html'))  //not existing anymore
+
 
 
 // Setup handlebars engine and views location
